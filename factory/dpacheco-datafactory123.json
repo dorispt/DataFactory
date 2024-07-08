@@ -1,0 +1,9 @@
+{
+	"name": "dpacheco-datafactory123",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "8ebd1fa1-be2b-40f4-a101-0ff428cacd22",
+		"tenantId": "2b5851a4-7637-4461-9842-2b1cfea4cbfd"
+	}
+}
