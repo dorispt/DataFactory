@@ -5,8 +5,26 @@
 		"factoryName": {
 			"value": "dpacheco-datafactory123"
 		},
+		"AzureDatabricks1_DataFactory_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricks2_DataFactory_accessToken": {
+			"value": ""
+		},
+		"AzureDatabricks_DataFactory_accessToken": {
+			"value": ""
+		},
 		"LINK_ADLS_DATAFACTORY_accountKey": {
 			"value": ""
+		},
+		"AzureDatabricks1_DataFactory_properties_typeProperties_existingClusterId": {
+			"value": "0714-211307-l971j7ue"
+		},
+		"AzureDatabricks2_DataFactory_properties_typeProperties_existingClusterId": {
+			"value": "0715-014437-iatq47fk"
+		},
+		"AzureDatabricks_DataFactory_properties_typeProperties_existingClusterId": {
+			"value": "0713-225348-l2quhaww"
 		},
 		"LINK_ADLS_DATAFACTORY_properties_typeProperties_url": {
 			"value": "https://dpacheco.dfs.core.windows.net/"
