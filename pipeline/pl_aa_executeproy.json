@@ -1,0 +1,43 @@
+{
+	"name": "pl_aa_executeproy",
+	"properties": {
+		"activities": [
+			{
+				"name": "Exec_IngestBronce",
+				"type": "ExecutePipeline",
+				"dependsOn": [],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pf_ingestaplata_databricks",
+						"type": "PipelineReference"
+					},
+					"waitOnCompletion": true
+				}
+			},
+			{
+				"name": "Exec_Transform",
+				"type": "ExecutePipeline",
+				"dependsOn": [
+					{
+						"activity": "Exec_IngestBronce",
+						"dependencyConditions": [
+							"Succeeded"
+						]
+					}
+				],
+				"policy": {
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"waitOnCompletion": true
+				}
+			}
+		],
+		"annotations": []
+	}
+}
