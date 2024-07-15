@@ -12,7 +12,7 @@
 				"userProperties": [],
 				"typeProperties": {
 					"pipeline": {
-						"referenceName": "pf_ingestaplata_databricks",
+						"referenceName": "pip_copy_files",
 						"type": "PipelineReference"
 					},
 					"waitOnCompletion": true
@@ -34,6 +34,10 @@
 				},
 				"userProperties": [],
 				"typeProperties": {
+					"pipeline": {
+						"referenceName": "pf_ingestaplata_databricks",
+						"type": "PipelineReference"
+					},
 					"waitOnCompletion": true
 				}
 			}
