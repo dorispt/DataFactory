@@ -1,0 +1,29 @@
+{
+	"name": "Parquet3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LINK_ADLS_DATAFACTORY",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "capa_plata",
+				"fileSystem": "dpacheco"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Cod_Categoria",
+				"type": "INT_32"
+			},
+			{
+				"name": "Nombre",
+				"type": "UTF8"
+			}
+		]
+	}
+}
