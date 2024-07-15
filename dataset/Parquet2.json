@@ -1,0 +1,41 @@
+{
+	"name": "Parquet2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "LINK_ADLS_DATAFACTORY",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"folderPath": "capa_oro",
+				"fileSystem": "dpacheco"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "Cod_Producto",
+				"type": "INT_32"
+			},
+			{
+				"name": "Producto",
+				"type": "UTF8"
+			},
+			{
+				"name": "Color",
+				"type": "UTF8"
+			},
+			{
+				"name": "SubCategoria",
+				"type": "UTF8"
+			},
+			{
+				"name": "Categoria",
+				"type": "UTF8"
+			}
+		]
+	}
+}
