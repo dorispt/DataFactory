@@ -464,7 +464,7 @@
 						"userProperties": [],
 						"typeProperties": {
 							"pipeline": {
-								"referenceName": "pf_ingestaplata_databricks",
+								"referenceName": "pip_copy_files",
 								"type": "PipelineReference"
 							},
 							"waitOnCompletion": true,
@@ -487,6 +487,10 @@
 						},
 						"userProperties": [],
 						"typeProperties": {
+							"pipeline": {
+								"referenceName": "pf_ingestaplata_databricks",
+								"type": "PipelineReference"
+							},
 							"waitOnCompletion": true,
 							"parameters": {}
 						}
@@ -498,6 +502,7 @@
 				"annotations": []
 			},
 			"dependsOn": [
+				"[concat(variables('factoryId'), '/pipelines/pip_copy_files')]",
 				"[concat(variables('factoryId'), '/pipelines/pf_ingestaplata_databricks')]"
 			]
 		}
